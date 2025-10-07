@@ -1,0 +1,46 @@
+{
+  "name": "mr---insurance-brochure-generator",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/main.js",
+    "start:dev": "nodemon --exec ts-node src/main.ts",
+    "start-server": "cross-env NODE_ENV=development nodemon --exec ts-node src/main.ts",
+    "lint": "eslint \"./src/**/*.ts\" --quiet",
+    "lint-fix": "eslint --fix \"./src/**/*.ts\" --quiet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^11.1.0",
+    "@fastify/helmet": "^13.0.2",
+    "cross-env": "^10.0.0",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.1",
+    "hpp": "^0.2.3",
+    "joi": "^18.0.1",
+    "mysql2": "^3.14.4",
+    "openai": "^5.20.3",
+    "pdfkit": "^0.17.2",
+    "sequelize": "^6.37.7",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/joi": "^17.2.2",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.6.2",
+    "@types/pdfkit": "^0.17.3",
+    "@types/sequelize": "^4.28.20",
+    "eslint": "^9.35.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
